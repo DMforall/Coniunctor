@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+  <title>Coniunctor Nōminum</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body onload="loadSel()">
+<h1 class="apptitle">Coniunctor Nōminum</h1>
+<div id="heading">Enter standard noun and adjective entries.</div>
+<textarea id="lemma" rows=1 cols=50>lupa, lupae f.</textarea>
+<textarea id="lemma2" rows=1 cols=50>ruber, rubra, rubrum</textarea>
+<br>
+<div id="buttons">
+	<button class="button button1" id="longa" onclick="pressMe('ā');">ā</button>
+	<button class="button button1" id="longe" onclick="pressMe('ē');">ē</button>
+	<button class="button button1" id="longi" onclick="pressMe('ī');">ī</button>
+	<button class="button button1" id="longo" onclick="pressMe('ō');">ō</button>
+	<button class="button button1" id="longu" onclick="pressMe('ū');">ū</button>
+	<button class="button button1" id="longy" onclick="pressMe('ȳ');">ȳ</button>
+	<button class="button button1" id="copytext" onclick="selDec(3);">copy text</button>
+	<button class="button button1" id="copyhtml" onclick="selDec(2);">copy html</button>
+</div>
+<br>
+<div>
+	<form>
+  		<select id="mySelect" onchange="showSel()">
+    		<option value="-1" selected=1>autodetect declension</option>
+  		</select>
+	</form>
+	<button class="button button1" id="declineIt" onclick="decIt();">decline now</button>
+</div>
+<div id="myTab">
+<table id="decTab">
+  <tr>
+    <th id="myHead"></th>
+    <th id="th1" >Singular</th>
+    <th id="th2">Plural</th>
+  </tr>
+  <tr>
+    <td id="tr1" class="rowHead">Nominative</td>
+    <td id="t1">_____________________</td>
+    <td id="t7">_____________________</td>
+  </tr>
+  <tr>
+    <td id="tr2" class="rowHead">Genitive</td>
+    <td id="t2">_____________________</td>
+    <td id="t8">_____________________</td>
+  </tr>
+  <tr>
+    <td id="tr3" class="rowHead">Dative</td>
+    <td id="t3">_____________________</td>
+    <td id="t9">_____________________</td>
+  </tr>
+  <tr>
+    <td id="tr4" class="rowHead">Accusative</td>
+    <td id="t4">_____________________</td>
+    <td id="t10">_____________________</td>
+  </tr>
+  <tr>
+    <td id="tr5" class="rowHead">Ablative</td>
+    <td id="t5">_____________________</td>
+    <td id="t11">_____________________</td>
+  </tr>
+  <tr>
+    <td id="tr6" class="rowHead">Vocative</td>
+    <td id="t6">_____________________</td>
+    <td id="t12">_____________________</td>
+  </tr>
+  <tr>
+    <td class="rowHead" id="t13" colspan="100%"></td>
+  </tr>
+</table>
+</div>
+<div id="showDec"></div>
+<div id="info">
+Locative case (in/on/at a place without a Latin preposition) is usually like dative (always so in plural), but it's like genitive for 2nd declension singular. 3rd declension locative can be like ablative or dative singular. 
+</div>
+<textarea id="invis"></textarea>
+</body>
+</html>
