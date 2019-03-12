@@ -47,7 +47,7 @@ var decNames = [
 	["4th m./f.", 9],
 	["4th n.", 10],
 	["5th -iēs m./f.", 11],
-	["5th -ēs m./f. (consonant stem)", 12],
+	["5th -ēs m./f. (consonant stem)", 12]//,
 	//["3rd m./f. i-stem except nom. pl.", 13],
 	//["3rd m./f. full i-stem", 14],
 	//["vīs defective 3rd dec.", 15],
@@ -57,6 +57,7 @@ var decNames = [
 
 function loadSel() {
   	var x = document.getElementById("mySelect");
+	alert(1);
 	for (var i = 0; i < decNames.length; i++) {
   		var option = document.createElement("option");
   		option.text = decNames[i][0];
