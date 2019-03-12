@@ -1,0 +1,126 @@
+body {
+	background-color: gray; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(275deg, #AAAABB , #009999);  
+
+	/*background: -webkit-radial-gradient(circle, #AAAABB , #009999);  
+	background: -moz-radial-gradient(circle, green, yellow, blue); 
+	background: -ms-radial-gradient(circle, green, yellow, blue); */
+}
+h1 {
+	color: #222211;
+	font-size: 50pt;
+	text-shadow: 8px 8px 3px gray;
+	font-weight: 800;
+	text-align: center;
+	padding; none;
+}
+#heading {
+	font-size: 30pt;
+	text-align: center;
+}
+.button {
+  background: #AAAAAA; 
+  border: solid;
+  border-radius: 40%;
+  color: black;
+  text-align: center;
+  font-size: 6px;
+  margin: 2px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button1 {
+	font-weight: bold;
+	font-size: 20pt;
+	box-shadow: 10px 10px 10px black;
+}
+#buttons {
+	position: relative;
+  	left: 5%;
+}
+#declineIt {
+	position: relative;
+  	left: 50%;
+}
+
+table {
+	padding: 10px;
+	font-size: 200%;
+  	width: 95%;
+}
+td {
+  	text-align: left;
+  	padding: 5px;
+}
+th {
+	text-align: left;
+	font-size: 30 pt;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+#t13 {
+}
+.rowHead {
+	font-weight: bold;
+}
+tr:nth-child(even) { //to differentiate rows?
+  	/*background-color: #999999;
+	background-image: linear-gradient(to left, #AAAABB , #009999);*/
+}
+
+#lemma, #lemma2 {
+	position: relative;
+  	left: 5%;
+	width: 90%;
+	font-weight: bold;
+	font-size: 20pt;
+	background: #BBBBBB;
+	border-radius: 10%;
+}
+
+
+#mySelect {
+	position: absolute;
+  	left: 5%;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+#info {
+position: relative;
+  	left: 5%;
+	color: black;
+	font-weight: bold;
+	font-size: 20pt;
+	width: 90%;
+	word-wrap: break-word;
+	height: 4000px;
+
+}
+#info::first-line {
+	color: blue;
+}
+#info::-webkit-selection {
+	background: grey;
+	color: red;
+}
+
+#invis {
+	display: "";
+	opacity: 0;
+} 
+
+/*
+#showDec {
+position: relative;
+  	left: 5%;
+	color: black;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 20pt;
+	width: 90%;
+	height: 4000px;
+}*/
+
